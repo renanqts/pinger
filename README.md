@@ -59,6 +59,7 @@ python listener.py
 In my case, I put the lines below in /etc/rc.local to start with the system.
 
 /usr/bin/python /var/scripts/pinger/pinger.py > /dev/null 2> /var/scripts/pinger/log/pinger.log
+
 /usr/bin/python /var/scripts/pinger/listener.py > /dev/null 2> /var/scripts/pinger/log/listener.log
 
 Feel free to choose the paths and ways to run the scripts.
