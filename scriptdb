@@ -1,0 +1,32 @@
+#create db pinger
+CREATE DATABASE pinger;
+
+CREATE USER 'pinger_user'@'127.0.0.1' IDENTIFIED BY 'Password DB';
+GRANT ALL ON pinger.* TO 'pinger_user'@'127.0.0.1';
+FLUSH PRIVILEGES;
+
+CREATE TABLE IF NOT EXISTS pinger.host (
+    id int(5) NOT NULL AUTO_INCREMENT,
+    name varchar(50) NOT NULL,
+    ip varchar(15) NOT NULL,
+    status bool NOT NULL,
+    PRIMARY KEY(id)
+	);
+
+CREATE TABLE IF NOT EXISTS pinger.alert (
+    id int(5) NOT NULL AUTO_INCREMENT,
+    host_id int(5) NOT NULL,
+    time timestamp NOT NULL,
+    sent bool DEFAULT FALSE,
+    seen int(2) DEFAULT 1,
+    PRIMARY KEY(id),
+    FOREIGN KEY (host_id) REFERENCES pinger.host(id)
+    );
+    
+CREATE TABLE IF NOT EXISTS pinger.user (
+    id int(5) NOT NULL AUTO_INCREMENT,
+    user varchar(50) NOT NULL,
+    telegram_id int(15) NOT NULL UNIQUE,
+    level int NOT NULL,
+    PRIMARY KEY(id)
+    );
