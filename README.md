@@ -3,7 +3,7 @@
 The project was thought to monitor devices. If you need a simple way to monitor your devices by cell phone, you can use that.
 With Pinger (name of project), you can receive alerts about the status of devices and manage them by Telegram.
 
-#### Requirements:
+### Requirements:
 
 	Linux + MariaDB + Python
 
