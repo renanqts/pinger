@@ -1,13 +1,13 @@
-About:
+# About:
 
 The project was Thought to monitor devices. If you need a simple way to monitor your devices by cell phone, you can use that.
 With Pinger (name of project), you can receive alerts about the status of devices and manager them by Telegram.
 
-Requirements:
+# Requirements:
 
 Linux + MariaDB + Python
 
-What I used:
+# What I used:
 
 - Raspberry PI 3
 - Raspbian
@@ -15,7 +15,7 @@ What I used:
 - Python 2.7
 - Python-telegram-bot
 
-How it works:
+# How it works:
 
 The Pinger runs in two modules.
 
@@ -32,14 +32,14 @@ The users have two levels of permissions:
 
 This scripts is responsible to monitor all hosts in database using ping (ICMP). If it notice that some host is down or up, it send a message to user or group configured in config.properties.
 
-Installation:
+# Installation:
 
 Install Raspbian (Or other OS as you wish) in Raspbian and than, run: 
 apt-get install mariadb-server python-dev python-pip python-mysqldb
 
 pip install python-telegram-bot
 
-Configuration:
+# Configuration:
 
 - Run chmod +x adduser.py discoveryid.py
 - Create the database structure like in scriptdb. Don't forget to change the 'Password DB' to your password database.
@@ -48,7 +48,7 @@ Configuration:
 - To discovery your telegram id, put your Bot token in config.properties and than, run the script discoveryid.py. After than, send /start to your BOT, it will answer you. Put the telegram id in config.properties too.
 - To create the first user, run adduser.py
 
-Starting the Pinger:
+# Starting the Pinger:
 
 After all configurations, you can test Pinger running the scripts:
 
