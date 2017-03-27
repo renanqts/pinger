@@ -35,7 +35,7 @@ This scripts is responsible to monitor all hosts in database using ping (ICMP). 
 
 ### Installation:
 
-Install Raspbian (Or other OS as you wish) in Raspbian and than:
+Install Raspbian (or other OS as you wish) in Raspbian and than:
 
 	apt-get install mariadb-server python-dev python-pip python-mysqldb
 
