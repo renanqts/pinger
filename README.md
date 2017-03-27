@@ -1,6 +1,6 @@
 About:
 
-The project was Thought to monitor devices. If you need a simple way to monitor your devices by cell phone, you can use that.
+The project was thought to monitor devices. If you need a simple way to monitor your devices by cell phone, you can use that.
 With Pinger (name of project), you can receive alerts about the status of devices and manager them by Telegram.
 
 Requirements:
