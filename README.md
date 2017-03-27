@@ -14,6 +14,7 @@ With Pinger (name of project), you can receive alerts about the status of device
 - MariaDB
 - Python 2.7
 - Python-telegram-bot
+- Vagrant + Puppet (opcional to dev)
 
 ### How it works:
 
