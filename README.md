@@ -36,8 +36,9 @@ This scripts is responsible to monitor all hosts in database using ping (ICMP). 
 
 ### Installation:
 
-Install Raspbian (or other OS as you wish) in Raspbian and than:
-
+Install OS as wish (in my case was Raspbian on Raspberry PI) and than:
+	
+	[Debian base]
 	apt-get install mariadb-server python-dev python-pip python-mysqldb
 	pip install python-telegram-bot
 
@@ -45,9 +46,9 @@ Install Raspbian (or other OS as you wish) in Raspbian and than:
 
 - Run chmod +x adduser.py discoveryid.py
 - Create the database structure like in scriptdb. Don't forget to change the 'Password DB' to your password database.
-- Configure the config.properties to your enviroment.
-- You must create the BOT in Telegram API;
-- To discovery your telegram id, put your Bot token in config.properties and than, run the script discoveryid.py. After than, send /start to your BOT, it will answer you. Put the telegram id in config.properties too.
+- Configure the config.properties to your enviroment
+- You must create the BOT in Telegram API
+- To discovery your telegram id, put your Bot token in config.properties and than, run the script discoveryid.py. After than, send /start to your BOT, it will answer you. Put the telegram id in config.properties too
 - To create the first user, run adduser.py
 
 ### Starting the Pinger:
@@ -60,7 +61,6 @@ After all configurations, you can test Pinger running the scripts:
 In my case, I put the lines below in /etc/rc.local to start with the system.
 
 	/usr/bin/python /var/scripts/pinger/pinger.py > /dev/null 2> /var/scripts/pinger/log/pinger.log
-
 	/usr/bin/python /var/scripts/pinger/listener.py > /dev/null 2> /var/scripts/pinger/log/listener.log
 
 Feel free to choose the paths and ways to run the scripts.
