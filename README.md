@@ -18,7 +18,7 @@ With Pinger (name of project), you can receive alerts about the status of device
 
 ### How it works:
 
-The Pinger runs in two modules.
+Pinger runs in two modules.
 
 - Listener Telegram Bot:
 
@@ -66,4 +66,4 @@ In my case, I put the lines below in /etc/rc.local to start with the system.
 
 Feel free to choose the paths and ways to run the scripts.
 
-<img src="https://github.com/renanqts/pinger/blob/master/printscreen.png" width="512">
+<img src="https://github.com/renanqts/pinger/blob/master/printscreen.png" width="368">
