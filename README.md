@@ -3,8 +3,6 @@
 The project was thought to monitor devices. If you need a simple way to monitor your devices by cell phone, you can use that.
 With Pinger (name of project), you can receive alerts about the status of devices and manage them by Telegram.
 
-<img src="https://github.com/renanqts/pinger/blob/master/printscreen.png" width="48">
-
 ### Requirements:
 
 	Linux + MariaDB + Python
@@ -67,3 +65,5 @@ In my case, I put the lines below in /etc/rc.local to start with the system.
 	/usr/bin/python /var/scripts/pinger/listener.py > /dev/null 2> /var/scripts/pinger/log/listener.log
 
 Feel free to choose the paths and ways to run the scripts.
+
+<img src="https://github.com/renanqts/pinger/blob/master/printscreen.png" width="512">
