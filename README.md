@@ -1,7 +1,7 @@
 ### About:
 
 The project was thought to monitor devices. If you need a simple way to monitor your devices by cell phone, you can use that.
-With Pinger (name of project), you can receive alerts about the status of devices and manage them by Telegram.
+With Pinger (name of the project), you can receive alerts about the status of devices and manage them by Telegram.
 
 ### Requirements:
 
@@ -45,7 +45,7 @@ Install OS as wish (in my case was Raspbian on Raspberry PI) and than:
 ### Configuration:
 
 - Run chmod +x adduser.py discoveryid.py
-- Create the database structure like in scriptdb. Don't forget to change the 'Password DB' to your password database.
+- Create the database structure like in scriptdb. Don't forget to change the 'Password DB' to your password database
 - Configure the config.properties to your enviroment
 - You must create the BOT in Telegram API
 - To discovery your telegram id, put your Bot token in config.properties and than, run the script discoveryid.py. After than, send /start to your BOT, it will answer you. Put the telegram id in config.properties too
