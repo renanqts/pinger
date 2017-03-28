@@ -39,7 +39,6 @@ This scripts is responsible to monitor all hosts in database using ping (ICMP). 
 Install Raspbian (or other OS as you wish) in Raspbian and than:
 
 	apt-get install mariadb-server python-dev python-pip python-mysqldb
-
 	pip install python-telegram-bot
 
 ### Configuration:
