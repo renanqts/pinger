@@ -1,7 +1,7 @@
 ### About:
 
 The project was thought to monitor devices. If you need a simple way to monitor your devices by cell phone, you can use that.
-With Pinger (name of the project), you can receive alerts about the status of devices and manage them by Telegram.
+With Pinger (name of the project), you can get alerts about the status of devices and manage them by Telegram.
 
 ### Requirements:
 
@@ -30,7 +30,7 @@ The users have two levels of permissions:
 	-User, in this level you can use only read functions;
 	-Admin, you can use all functions.
 
-- Script monitor ICMP
+- Script monitor ICMP:
 
 This scripts is responsible to monitor all hosts in database using ping (ICMP). If it notice that some host is down or up, it send a message to user or group configured in config.properties.
 
